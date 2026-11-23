@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Mendoza — Tourism Brochure</title>
+  <meta name="description"
+    content="An interactive tri-fold travel brochure for Mendoza, Argentina. Open the cover, unfold the flap, and turn it over.">
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+
+  <main class="viewport" id="viewport">
+    <div class="floor" id="floor" aria-hidden="true"></div>
+
+    <div class="scaler" id="scaler">
+      <div class="book" id="book" data-step="0">
+
+        <!-- LEAF 1 · front = cover · back = inside left panel -->
+        <section class="leaf leaf1" aria-label="Cover and first inside panel">
+          <article class="face panel cover flip" aria-label="Cover">
+            <div class="eyebrow" style="color:#e6cdae">Argentina · Cuyo region</div>
+            <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/The_Andes_from_Mendoza.jpg"
+              alt="The Andes from Mendoza">
+            <div class="credit" style="color:#e6cdae">The Andes from Mendoza — Steve Peck, CC BY 2.0 · <a
+                style="color:#e6cdae" href="https://commons.wikimedia.org/wiki/File:The_Andes_from_Mendoza.jpg"
+                target="_blank" rel="noopener">photo details</a></div>
+            <h1>DISCOVER<br>MENDOZA</h1>
+            <div class="subtitle">Where the Andes meet the vineyards</div>
+            <div class="tagline">Mountain horizons. Agricultural heritage. A vibrant regional culture.</div>
+            <div class="footer" style="color:#e6cdae">A travel guide to the landscapes and culture of Mendoza</div>
+          </article>
+
+          <article class="face panel" aria-label="The land and its grapes">
+            <div class="eyebrow">01 / Geography</div>
+            <h2>The Land &amp; Its Grapes</h2>
+            <img class="photo photo-strip"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/98/Vineyards_below_the_Andes.jpg"
+              alt="Mendoza vineyard landscape with the Andes">
+            <div class="credit">Vineyards below the Andes — Beatrice Murch, CC BY-SA 2.0 · <a
+                href="https://commons.wikimedia.org/wiki/File:Vineyards_below_the_Andes.jpg" target="_blank"
+                rel="noopener">photo details</a></div>
+            <p>Mendoza’s vineyards are planted across a range of elevations and growing conditions. The region’s arid
+              climate, abundant sunshine, and irrigation systems are central to its agricultural identity.</p>
+            <h3>Important grape varieties</h3>
+            <ul>
+              <li>Malbec — Mendoza’s best-known variety</li>
+              <li>Bonarda — another important red variety</li>
+              <li>Cabernet Sauvignon and Syrah</li>
+              <li>Cereza and Criolla Grande</li>
+            </ul>
+            <p>Differences in elevation, soil, and local climate create distinct growing conditions across the province.
+            </p>
+          </article>
+        </section>
+
+        <!-- LEAF 2 · front = inside centre panel · back = back panel -->
+        <section class="leaf leaf2" aria-label="Centre panel">
+          <article class="face panel sage" aria-label="Explore the regions">
+            <div class="eyebrow">02 / A diverse province</div>
+            <h2>Explore the Regions</h2>
+            <p>Mendoza is commonly described through several major wine-growing areas. Each contributes to the
+              province’s agricultural character.</p>
+            <h3>Uco Valley</h3>
+            <p>South of Mendoza city, with high-elevation vineyards, dramatic mountain views, and varied growing sites.
+            </p>
+            <h3>Primera Zona</h3>
+            <p>Includes Luján de Cuyo and Maipú, areas with a long history in Mendoza’s wine industry.</p>
+            <h3>Eastern &amp; Northern areas</h3>
+            <p>Important agricultural zones that add to the province’s geographic and production diversity.</p>
+            <h3>Southern Mendoza</h3>
+            <p>Includes San Rafael and surrounding areas, with distinctive landscapes and growing conditions.</p>
+            <div class="callout">One province, many landscapes and local identities.</div>
+          </article>
+
+          <article class="face panel back flip" aria-label="A region shaped by place">
+            <div class="eyebrow">The story behind the landscape</div>
+            <h2>A Region Shaped by Place</h2>
+            <img class="photo small-photo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9b/The_Andes_from_Mendoza.jpg"
+              alt="Snow-covered Andes mountains in Mendoza">
+            <div class="credit">The Andes from Mendoza — Steve Peck, CC BY 2.0 · <a
+                href="https://commons.wikimedia.org/wiki/File:The_Andes_from_Mendoza.jpg" target="_blank"
+                rel="noopener">photo details</a></div>
+            <p>The Andes influence Mendoza’s climate and water supply. Snowmelt is an important source of irrigation,
+              while elevation, soils, and temperature differences help distinguish the province’s growing areas.</p>
+            <h3>Research sources</h3>
+            <p class="source-list"><a href="https://winesofargentina.org/en/provinces/mendoza" target="_blank"
+                rel="noopener">Wines of Argentina — Mendoza</a></p>
+            <p class="source-list"><a href="https://www.argentina.travel/en/destination/mendoza" target="_blank"
+                rel="noopener">Visit Argentina — Mendoza</a></p>
+            <p class="source-list"><a href="https://www.argentina.travel/en/activities/uco-valley" target="_blank"
+                rel="noopener">Visit Argentina — Uco Valley</a></p>
+            <p class="source-list"><a href="https://www.argentina.travel/en/activities/vinos-en-mendoza" target="_blank"
+                rel="noopener">Visit Argentina — Mendoza wines and wine route</a></p>
+            <div class="footer">Educational tourism concept · Photographs credited individually; see linked Commons
+              pages for license terms.</div>
+          </article>
+        </section>
+
+        <!-- LEAF 3 · front = inside right panel · back = inside flap -->
+        <section class="leaf leaf3" aria-label="Flap and last inside panel">
+          <article class="face panel wine" aria-label="More than vineyards">
+            <div class="eyebrow" style="color:#e6cdae">03 / Culture &amp; experiences</div>
+            <h2>More Than Vineyards</h2>
+            <img class="photo photo-strip"
+              src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/VendimiaMendoza.jpg/1280px-VendimiaMendoza.jpg"
+              alt="The Fiesta Nacional de la Vendimia in Mendoza">
+            <div class="credit" style="color:#e6cdae">VendimiaMendoza — Javinaselli, CC BY-SA 4.0 · <a
+                style="color:#e6cdae" href="https://commons.wikimedia.org/wiki/File:VendimiaMendoza.jpg" target="_blank"
+                rel="noopener">photo details</a></div>
+            <p>Mendoza’s identity also includes city life, outdoor landscapes, regional food, and seasonal celebrations.
+            </p>
+            <h3>Fiesta Nacional de la Vendimia</h3>
+            <p>A major harvest celebration featuring performances, parades, and regional traditions.</p>
+            <h3>Aconcagua Provincial Park</h3>
+            <p>Mountain scenery around the highest peak in the Americas.</p>
+            <h3>Potrerillos &amp; Mendoza city</h3>
+            <p>Explore the reservoir and surrounding mountains, or enjoy the city’s plazas, parks, and cultural spaces.
+            </p>
+            <div class="callout" style="color:#e6cdae">Come for the landscape. Leave with a sense of place.</div>
+          </article>
+
+          <article class="face panel sage flip" aria-label="Plan your visit">
+            <div class="eyebrow">A journey through Cuyo</div>
+            <h2>Plan Your Visit</h2>
+            <img class="photo photo-strip"
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Vineyard_in_Mendoza,_Argentina.jpg?width=1024"
+              alt="Vineyard in the Uco Valley with the Andes Mountains in Mendoza">
+            <div class="credit">Vineyard in Mendoza, Argentina — David, CC BY 2.0 · <a
+                href="https://commons.wikimedia.org/wiki/File:Vineyard_in_Mendoza,_Argentina.jpg" target="_blank"
+                rel="noopener">photo details</a></div>
+            <p>Mendoza sits in western Argentina, where the foothills of the Andes meet a landscape shaped by sunshine,
+              dry conditions, and irrigation.</p>
+            <h3>Explore the region</h3>
+            <ul>
+              <li>Mendoza city’s plazas, parks, and tree-lined streets</li>
+              <li>Andean scenery around Potrerillos</li>
+              <li>Aconcagua Provincial Park and its mountain landscapes</li>
+              <li>Local food, history, and harvest traditions</li>
+            </ul>
+            <div class="callout">A destination where landscape, agriculture, and culture come together.</div>
+          </article>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Brochure controls">
+    <button type="button" class="btn" id="prev">Close</button>
+    <div class="status">
+      <div class="dots" id="dots" role="group" aria-label="Brochure position"></div>
+      <div class="label" id="label" aria-live="polite">Cover</div>
+    </div>
+    <button type="button" class="btn primary" id="next">Open the cover</button>
+  </nav>
+
+</body>
+
+</html>
